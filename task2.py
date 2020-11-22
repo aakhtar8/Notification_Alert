@@ -22,12 +22,12 @@ def notify():
                 for word in words:
                     if student.get("level") == word:
                         student.get("notification no.").append(notifications.index(notification))
-            '''
+            
             #Turn on this code block if code is to be checked or verified
             print("==========================================================")
             print("notifications related to ", student.get("name"), ":")
             for i in student.get("notification no."):
                 print(data[i])
-            '''
+            
         return students
 notify = notify()
